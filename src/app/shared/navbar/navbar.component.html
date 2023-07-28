@@ -1,1 +1,13 @@
-<p>navbar works!</p>
+<mat-toolbar color="primary" class="flex justify-between">
+  <span [routerLink]="['/']">Paul García</span>
+  <div class="grid grid-cols-2 gap-2">
+    <div [routerLink]="['/projects']" routerLinkActive="active" 
+    class="col-span-1 p-2 rounded text-base font-normal text-center">
+      Projects
+    </div>
+    <div [routerLink]="['/about']" routerLinkActive="active"
+    class="col-span-1 p-2 rounded text-base font-normal text-center">
+      About
+    </div>
+  </div>
+</mat-toolbar>
